@@ -1,14 +1,17 @@
+const colors = require('tailwindcss/colors')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./*.html", "./src/**/*.js"],
   theme: {
     extend: {
       colors: {
-        'brand-yellow': '#FFD600',
-        'brand-black': '#0F172A', // Richer cool black (Slate 900)
-        'brand-dark': '#020617', // Deepest slate
-        'brand-gray': '#F8FAFC',
-        'surface-dark': '#1E293B',
+        gray: colors.neutral, // Force neutral gray
+        'brand-yellow': '#FBFF00', // High voltage yellow
+        'brand-black': '#000000', // Pure black
+        'brand-dark': '#0a0a0a', // Almost black (neutral)
+        'brand-gray': '#f4f4f5', // Zinc 100
+        'surface-dark': '#171717', // Neutral dark gray (Zinc 900)
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
@@ -35,7 +38,7 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
+        'grid-pattern': "linear-gradient(to right, #333333 1px, transparent 1px), linear-gradient(to bottom, #333333 1px, transparent 1px)",
       }
     },
   },

@@ -1,3 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FnF Engineering Services</title>
+    <link href="./public/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased selection:bg-brand-yellow selection:text-brand-black flex flex-col min-h-screen bg-brand-dark">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-brand-dark/80 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                 <a href="index.html" class="flex items-center gap-3 group">
+                    <img class="h-10 w-auto rounded border border-white/10 group-hover:border-brand-yellow transition duration-300 grayscale" src="./logo.jpeg" alt="FnF Logo">
+                    <div class="flex flex-col">
+                        <span class="font-display font-bold text-xl text-white tracking-tight leading-none">FnF<span class="text-brand-yellow">.</span></span>
+                        <span class="text-[10px] text-gray-400 font-medium tracking-widest uppercase">Engineering</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex space-x-1 items-center bg-white/5 px-2 py-1 rounded-full border border-white/10">
+                    <a href="index.html" class="text-gray-400 hover:text-white hover:bg-white/5 px-4 py-2 rounded-full text-sm font-medium transition">Home</a>
+                    <a href="about.html" class="text-gray-400 hover:text-white hover:bg-white/5 px-4 py-2 rounded-full text-sm font-medium transition">About</a>
+                    <a href="services.html" class="text-gray-400 hover:text-white hover:bg-white/5 px-4 py-2 rounded-full text-sm font-medium transition">Services</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="contact.html" class="bg-brand-yellow text-brand-dark hover:bg-white px-5 py-2.5 rounded-full text-sm font-bold transition duration-300 shadow-lg shadow-brand-yellow/20">Book Consultation</a>
+                </div>
+                 <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-white/10 p-6 space-y-4">
+            <a href="index.html" class="block text-gray-400 text-lg">Home</a>
+            <a href="about.html" class="block text-gray-400 text-lg">About</a>
+            <a href="services.html" class="block text-gray-400 text-lg">Services</a>
+            <a href="contact.html" class="block text-brand-yellow text-lg font-bold">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-40 pb-20 overflow-hidden">
+         <div class="absolute inset-0 bg-brand-dark z-0">
+            <div class="absolute inset-0 bg-grid-pattern opacity-[0.1]"></div>
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-yellow/5 rounded-full blur-[120px]"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-white">Contact Us<span class="text-brand-yellow">.</span></h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">Start your project with the best in the business.</p>
+        </div>
+    </header>
+
     <!-- Contact Content -->
     <section class="section-padding flex-grow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

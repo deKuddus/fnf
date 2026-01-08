@@ -47,7 +47,7 @@ html {
 }
 
 body {
-  @apply bg-brand-dark text-slate-300 overflow-x-hidden;
+  @apply bg-brand-dark text-gray-300 overflow-x-hidden;
 }
 
 /* Custom Scrollbar */

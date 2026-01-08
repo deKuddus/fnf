@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FnF Engineering | The Sound of Drawing</title>
     <meta name="description" content="Precision engineering drafting that saves time and money. Zero-clash MEP and Architectural designs for Riyadh's leaders.">
-    <link href="./dist/output.css" rel="stylesheet">
+    <link href="./public/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
             <div class="flex justify-between h-20 items-center">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center gap-3 group">
-                    <img class="h-10 w-auto rounded border border-white/10 group-hover:border-brand-yellow transition duration-300" src="./logo.jpeg" alt="FnF Logo">
+                    <img class="h-10 w-auto rounded border border-white/10 group-hover:border-brand-yellow transition duration-300 grayscale" src="./logo.jpeg" alt="FnF Logo">
                     <div class="flex flex-col">
                         <span class="font-display font-bold text-xl text-white tracking-tight leading-none">FnF<span class="text-brand-yellow">.</span></span>
                         <span class="text-[10px] text-gray-400 font-medium tracking-widest uppercase">Engineering</span>
@@ -61,7 +61,7 @@
         <div class="absolute inset-0 bg-brand-dark z-0">
             <div class="absolute inset-0 bg-grid-pattern opacity-[0.05] bg-[length:40px_40px]"></div>
             <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-yellow/10 rounded-full blur-[120px] animate-pulse-slow"></div>
-            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px]"></div>
         </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
@@ -101,18 +101,18 @@
                 <div class="relative rounded-xl bg-surface-dark border border-white/10 shadow-2xl overflow-hidden aspect-video">
                     <!-- Overlay Header -->
                     <div class="h-10 bg-white/5 border-b border-white/5 flex items-center px-4 gap-2">
-                        <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+                        <div class="w-3 h-3 rounded-full bg-white/20"></div>
+                        <div class="w-3 h-3 rounded-full bg-white/20"></div>
+                        <div class="w-3 h-3 rounded-full bg-white/20"></div>
                     </div>
                     <!-- Image -->
-                    <img src="./images/service_mep.png" alt="MEP Digital Twin" class="w-full h-full object-cover opacity-80 hover:scale-105 transition duration-700 ease-out">
+                    <img src="./images/service_mep.png" alt="MEP Digital Twin" class="w-full h-full object-cover opacity-80 hover:scale-105 transition duration-700 ease-out grayscale">
                     <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
                 </div>
                 <!-- Floating Card - Adjusted position to prevent overlap -->
                 <div class="absolute -bottom-6 -right-4 md:-bottom-10 md:-right-10 hidden md:block glass-card p-6 animate-float z-20">
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
+                        <div class="w-12 h-12 rounded-full bg-brand-yellow/20 flex items-center justify-center text-brand-yellow">
                             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
                         </div>
                         <div>
@@ -153,7 +153,7 @@
             <div>
                 <h2 class="font-display text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                     Construction is<br>
-                    <span class="text-red-500">Too Expensive</span><br>
+                    <span class="text-brand-yellow">Too Expensive</span><br>
                     to Guess.
                 </h2>
                 <p class="text-gray-400 text-lg mb-8">
@@ -210,7 +210,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 min-h-[600px]">
              <!-- Large Card: Project 1 -->
             <div class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-3xl bg-surface-dark border border-white/5 shadow-2xl">
-                 <img src="./images/service_mep.png" class="absolute inset-0 w-full h-full object-cover transform scale-100 group-hover:scale-110 transition duration-1000 ease-out opacity-60 mix-blend-overlay">
+                 <img src="./images/service_mep.png" class="absolute inset-0 w-full h-full object-cover transform scale-100 group-hover:scale-110 transition duration-1000 ease-out opacity-60 mix-blend-overlay grayscale">
                  <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent"></div>
 
                  <div class="absolute top-8 left-8">
@@ -254,7 +254,7 @@
 
             <!-- Card: Project 3 -->
             <div class="group relative overflow-hidden rounded-3xl bg-surface-dark border border-white/5 shadow-xl hover:border-brand-yellow/30 transition">
-                 <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+                 <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
                  <div class="p-8 h-full flex flex-col justify-end relative z-10">
                      <div class="mb-auto flex justify-between items-start">
                         <svg class="w-10 h-10 text-white/20 group-hover:text-brand-yellow transition" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
