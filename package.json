@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "FnF Engineering Services Website",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/styles.css -o ./public/output.css",
+    "build": "npx tailwindcss -i ./src/styles.css -o ./public/output.css && cp *.html public/ && cp -R images public/ && cp logo.jpeg public/ && sed -i '' 's|./public/output.css|./output.css|g' public/*.html",
     "watch": "npx tailwindcss -i ./src/styles.css -o ./public/output.css --watch"
   },
   "devDependencies": {

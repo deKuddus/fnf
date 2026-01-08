@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FnF Engineering Services</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased selection:bg-brand-yellow selection:text-white flex flex-col min-h-screen bg-brand-beige text-brand-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-brand-beige/90 backdrop-blur-md border-b border-black/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                 <a href="index.html" class="flex items-center gap-3 group">
+                    <img class="h-10 w-auto rounded border border-black/5 group-hover:border-brand-yellow transition duration-300" src="./logo.jpeg" alt="FnF Logo">
+                    <div class="flex flex-col">
+                        <span class="font-display font-bold text-xl text-brand-black tracking-tight leading-none">FnF<span class="text-brand-yellow">.</span></span>
+                        <span class="text-[10px] text-gray-400 font-medium tracking-widest uppercase">Engineering</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex space-x-1 items-center bg-black/5 px-2 py-1 rounded-full border border-black/5">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-black hover:bg-black/5 px-4 py-2 rounded-full text-sm font-medium transition">Home</a>
+                    <a href="about.html" class="text-brand-black bg-white shadow-sm border border-black/5 px-4 py-2 rounded-full text-sm font-medium transition">About</a>
+                    <a href="services.html" class="text-gray-600 hover:text-brand-black hover:bg-black/5 px-4 py-2 rounded-full text-sm font-medium transition">Services</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="contact.html" class="bg-brand-black text-white hover:bg-brand-yellow hover:text-black px-5 py-2.5 rounded-full text-sm font-bold transition duration-300 shadow-lg shadow-black/10">Book Consultation</a>
+                </div>
+                 <button id="mobile-menu-btn" class="md:hidden text-brand-black p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-beige border-b border-black/10 p-6 space-y-4">
+            <a href="index.html" class="block text-gray-600 text-lg">Home</a>
+            <a href="about.html" class="block text-brand-black text-lg font-bold">About</a>
+            <a href="services.html" class="block text-gray-600 text-lg">Services</a>
+            <a href="contact.html" class="block text-brand-yellow text-lg font-bold">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-40 pb-20 overflow-hidden">
+        <div class="absolute inset-0 bg-brand-beige z-0">
+             <div class="absolute inset-0 bg-grid-pattern opacity-[0.03] bg-[length:40px_40px]"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-brand-black">About FnF<span class="text-brand-yellow">.</span></h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Established in 2026, we are the new standard in Riyadh for engineering drafting precision.</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="section-padding flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Story & Intro -->
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-32">
+                <div>
+                    <span class="text-brand-yellow font-bold tracking-widest text-xs uppercase mb-2 block">Our Story</span>
+                    <h2 class="font-display text-4xl font-bold mb-6 text-brand-black">More Than Just Lines on Paper.</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                        FnF Engineering Services was born out of a frustration with the status quo. In a city as dynamic as Riyadh, we saw construction projects slowed down by outdated drafting practices and coordination failures.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                        We established FnF in 2026 with a singular purpose: to bring <strong>musical precision</strong> to engineering. We believe that a set of drawings should be as harmonious as a symphony—every element in its perfect place, every clash resolved before the first brick is laid.
+                    </p>
+                    <div class="flex items-center gap-4 mt-8">
+                        <div class="h-px bg-black/10 flex-grow"></div>
+                        <span class="text-brand-black font-display font-medium">The Sound of Drawing</span>
+                        <div class="h-px bg-black/10 flex-grow"></div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-brand-yellow/20 to-transparent blur-xl opacity-70 group-hover:opacity-100 transition duration-700"></div>
+                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-black/10 group-hover:border-black/20 transition duration-500">
+                        <img src="./images/hero.png" alt="Engineering Team" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition"></div>
+                     </div>
+                </div>
+            </div>
+
+            <!-- Vision & Mission -->
+            <div class="grid md:grid-cols-2 gap-8 mb-32">
+                <div class="bg-white border border-black/10 p-10 rounded-2xl relative overflow-hidden group hover:border-black/30 transition duration-300 shadow-sm">
+                    <div class="absolute top-0 right-0 p-8 opacity-5">
+                        <svg class="w-32 h-32 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-brand-black mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To eliminiate construction waste and rework through flawless, data-driven engineering drafting and BIM coordination. We aim to be the silent partner behind Riyadh's most successful builds.
+                    </p>
+                </div>
+                <div class="bg-white border border-black/10 p-10 rounded-2xl relative overflow-hidden group hover:border-black/30 transition duration-300 shadow-sm">
+                    <div class="absolute top-0 right-0 p-8 opacity-5">
+                        <svg class="w-32 h-32 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-brand-black mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To become the undisputed leader in Saudi Arabia for digital construction engineering, setting the benchmark for precision, speed, and regulatory compliance by 2030.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="border-y border-black/5 py-16 mb-32 bg-gray-50">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+                    <div>
+                        <div class="text-4xl md:text-5xl font-display font-bold text-brand-yellow mb-2">50+</div>
+                        <p class="text-sm text-gray-500 uppercase tracking-widest">Projects Completed</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-display font-bold text-brand-yellow mb-2">100%</div>
+                        <p class="text-sm text-gray-500 uppercase tracking-widest">Approval Rate</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-display font-bold text-brand-yellow mb-2">24h</div>
+                        <p class="text-sm text-gray-500 uppercase tracking-widest">Avg. Response Time</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-display font-bold text-brand-yellow mb-2">Zero</div>
+                        <p class="text-sm text-gray-500 uppercase tracking-widest">Site Clashes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leadership Team -->
+            <div class="mb-20">
+                <div class="text-center mb-16">
+                    <span class="text-brand-black font-bold tracking-widest text-xs uppercase bg-brand-yellow/20 px-3 py-1 rounded-full">The Minds Behind</span>
+                    <h2 class="font-display text-3xl font-bold text-brand-black mt-4">Meet Our Leadership</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl border border-black/10 aspect-[4/5] mb-6 shadow-md">
+                            <div class="absolute inset-0 bg-gray-100 flex items-center justify-center">
+                                <svg class="w-20 h-20 text-black/10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                            <!-- Placeholder for actual image -->
+                            <!-- <img src="..." class="absolute inset-0 w-full h-full object-cover"> -->
+                            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/20 to-transparent p-6 translate-y-2 group-hover:translate-y-0 transition duration-300">
+                                <div class="flex gap-4 justify-center">
+                                    <a href="#" class="text-white hover:text-brand-yellow transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62v10.86zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.03 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.28-.48-2.17-1.52-2.17-1.15 0-1.76.96-2.06 1.9v6.07h-3.64V9.24h3.64v1.66c.5-.93 1.68-2.27 3.58-2.27 2.6 0 3.63 1.93 3.63 4.96v6.51z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-black text-center">Saud Al-Qahtani</h3>
+                        <p class="text-gray-500 text-sm text-center uppercase tracking-wider font-medium">Founder & CEO</p>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="group">
+                        <div class="relative overflow-hidden rounded-xl border border-black/10 aspect-[4/5] mb-6 shadow-md">
+                            <div class="absolute inset-0 bg-gray-100 flex items-center justify-center">
+                                <svg class="w-20 h-20 text-black/10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-dark/90 to-transparent p-6 translate-y-2 group-hover:translate-y-0 transition duration-300">
+                                <div class="flex gap-4 justify-center">
+                                    <a href="#" class="text-white hover:text-brand-yellow transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62v10.86zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.03 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.28-.48-2.17-1.52-2.17-1.15 0-1.76.96-2.06 1.9v6.07h-3.64V9.24h3.64v1.66c.5-.93 1.68-2.27 3.58-2.27 2.6 0 3.63 1.93 3.63 4.96v6.51z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-black text-center">James Wilson, PE</h3>
+                        <p class="text-gray-500 text-sm text-center uppercase tracking-wider font-medium">Head of Engineering</p>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="group">
+                         <div class="relative overflow-hidden rounded-xl border border-black/10 aspect-[4/5] mb-6 shadow-md">
+                            <div class="absolute inset-0 bg-gray-100 flex items-center justify-center">
+                                <svg class="w-20 h-20 text-black/10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-dark/90 to-transparent p-6 translate-y-2 group-hover:translate-y-0 transition duration-300">
+                                <div class="flex gap-4 justify-center">
+                                    <a href="#" class="text-white hover:text-brand-yellow transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62v10.86zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.03 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.28-.48-2.17-1.52-2.17-1.15 0-1.76.96-2.06 1.9v6.07h-3.64V9.24h3.64v1.66c.5-.93 1.68-2.27 3.58-2.27 2.6 0 3.63 1.93 3.63 4.96v6.51z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-black text-center">Fatima Al-Hamad</h3>
+                        <p class="text-gray-500 text-sm text-center uppercase tracking-wider font-medium">BIM Manager</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="relative rounded-3xl overflow-hidden bg-brand-black border border-white/10 p-12 text-center text-white">
+                <div class="absolute inset-0 bg-grid-pattern opacity-[0.2]"></div>
+                <div class="relative z-10">
+                    <h2 class="text-3xl font-display font-bold text-white mb-6">Want to join our team?</h2>
+                    <p class="text-gray-300 mb-8 max-w-2xl mx-auto">We are always looking for talented engineers and draftsmen who share our passion for precision. Drop us a line.</p>
+                    <a href="contact.html" class="inline-block border border-white/20 hover:border-brand-yellow text-white hover:text-brand-yellow px-8 py-3 rounded-full font-bold transition duration-300">
+                        View Careers
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-black/5 pt-20 pb-10 text-sm mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                 <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <span class="font-display font-bold text-2xl text-brand-black">FnF<span class="text-brand-yellow">.</span></span>
+                </a>
+                <p class="text-gray-500 max-w-sm mb-6">
+                    The Sound of Drawing. Delivering innovative, sustainable, and code-compliant engineering drafting solutions.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-brand-black font-bold mb-4 uppercase tracking-widest text-xs">Services</h4>
+                <ul class="space-y-3 text-gray-500">
+                    <li><a href="services.html" class="hover:text-brand-black transition">MEP Design</a></li>
+                    <li><a href="services.html" class="hover:text-brand-black transition">Architectural Drafting</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-brand-black font-bold mb-4 uppercase tracking-widest text-xs">Company</h4>
+                <ul class="space-y-3 text-gray-500">
+                    <li><a href="about.html" class="hover:text-brand-black transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-brand-black transition">Get a Quote</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 border-t border-black/5 pt-8">
+            &copy; 2026 FnF Engineering Services. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

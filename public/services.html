@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | FnF Engineering</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased selection:bg-brand-yellow selection:text-white flex flex-col min-h-screen bg-brand-beige text-brand-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-brand-beige/90 backdrop-blur-md border-b border-black/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                 <a href="index.html" class="flex items-center gap-3 group">
+                    <img class="h-10 w-auto rounded border border-black/5 group-hover:border-brand-yellow transition duration-300" src="./logo.jpeg" alt="FnF Logo">
+                    <div class="flex flex-col">
+                        <span class="font-display font-bold text-xl text-brand-black tracking-tight leading-none">FnF<span class="text-brand-yellow">.</span></span>
+                        <span class="text-[10px] text-gray-400 font-medium tracking-widest uppercase">Engineering</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex space-x-1 items-center bg-black/5 px-2 py-1 rounded-full border border-black/5">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-black hover:bg-black/5 px-4 py-2 rounded-full text-sm font-medium transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-brand-black hover:bg-black/5 px-4 py-2 rounded-full text-sm font-medium transition">About</a>
+                    <a href="services.html" class="text-brand-black bg-white shadow-sm border border-black/5 px-4 py-2 rounded-full text-sm font-medium transition">Services</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="contact.html" class="bg-brand-black text-white hover:bg-brand-yellow hover:text-black px-5 py-2.5 rounded-full text-sm font-bold transition duration-300 shadow-lg shadow-black/10">Book Consultation</a>
+                </div>
+                 <button id="mobile-menu-btn" class="md:hidden text-brand-black p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-beige border-b border-black/10 p-6 space-y-4">
+            <a href="index.html" class="block text-gray-600 text-lg">Home</a>
+            <a href="about.html" class="block text-gray-600 text-lg">About</a>
+            <a href="services.html" class="block text-brand-black text-lg font-bold">Services</a>
+            <a href="contact.html" class="block text-brand-yellow text-lg font-bold">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative pt-40 pb-20 overflow-hidden">
+        <div class="absolute inset-0 bg-brand-beige z-0">
+             <div class="absolute inset-0 bg-grid-pattern opacity-[0.03] bg-[length:40px_40px]"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-brand-black">Our Services</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive Engineering & Drafting Solutions tailored for Riyadh's Construction Industry.</p>
+        </div>
+    </header>
+
+    <!-- Services List -->
+    <section class="section-padding flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Service 1 -->
+            <div class="flex flex-col lg:flex-row gap-16 items-center mb-32 group">
+                <div class="lg:w-1/2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-black/10 group-hover:border-black/20 transition duration-500">
+                        <img src="./images/service_mep.png" alt="MEP Services" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition"></div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="text-brand-black font-bold tracking-widest text-xs uppercase mb-2 block bg-brand-yellow/20 px-3 py-1 rounded-full w-fit">Core Competency</span>
+                    <h2 class="font-display text-4xl font-bold mb-6 text-brand-black">MEP Design & Coordination</h2>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Mechanical, Electrical, and Plumbing systems are the lifelines of any building. We provide precise MEP design services that ensure efficiency, sustainability, and <span class="text-brand-black font-semibold">zero clashes</span> during construction.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-600">
+                            <span class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-white border border-black/10 text-brand-black text-xs shadow-sm">✓</span>
+                            HVAC System Design & Load Calculation
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                             <span class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-white border border-black/10 text-brand-black text-xs shadow-sm">✓</span>
+                            Electrical Power & Lighting Layouts
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                             <span class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-white border border-black/10 text-brand-black text-xs shadow-sm">✓</span>
+                            Plumbing & Drainage Engineering
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="flex flex-col lg:flex-row-reverse gap-16 items-center mb-32 group">
+                <div class="lg:w-1/2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-black/10 group-hover:border-black/20 transition duration-500 h-96">
+                        <img src="./images/hero.png" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-20"></div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="text-brand-black font-bold tracking-widest text-xs uppercase mb-2 block bg-brand-yellow/20 px-3 py-1 rounded-full w-fit">Visuals</span>
+                    <h2 class="font-display text-4xl font-bold mb-6 text-brand-black">Architectural Design</h2>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        We transform concepts into reality. Our architectural drafting services cover everything from initial sketches to full construction documentation, ensuring aesthetic appeal meets structural integrity.
+                    </p>
+                     <ul class="space-y-4">
+                        <li class="flex items-center text-gray-600">
+                             <span class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-white border border-black/10 text-brand-black text-xs shadow-sm">✓</span>
+                            Concept Design & 3D Visualization
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                             <span class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-white border border-black/10 text-brand-black text-xs shadow-sm">✓</span>
+                            Detailed Construction Drawings
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                             <span class="flex items-center justify-center w-6 h-6 mr-3 rounded-full bg-white border border-black/10 text-brand-black text-xs shadow-sm">✓</span>
+                            Interior Design Layouts
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                     <div class="bg-brand-black w-full h-80 rounded-2xl border border-white/10 flex flex-col items-center justify-center p-12 text-center group hover:border-brand-yellow transition duration-500 relative overflow-hidden shadow-2xl">
+                        <div class="absolute inset-0 bg-grid-pattern opacity-[0.2]"></div>
+                        <svg class="w-24 h-24 text-brand-yellow mb-6 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <h3 class="text-white text-2xl font-bold relative z-10">Standard Drafting & More</h3>
+                     </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="text-brand-black font-bold tracking-widest text-xs uppercase mb-2 block bg-brand-yellow/20 px-3 py-1 rounded-full w-fit">Technical</span>
+                    <h2 class="font-display text-4xl font-bold mb-6 text-brand-black">Specialized Engineering Services</h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Beyond the basics, we offer specialized services to support your project's unique needs in Riyadh.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-6 rounded-xl border border-black/10 hover:border-black/30 transition shadow-sm">
+                            <h4 class="font-bold text-brand-black text-lg mb-2">BIM Modeling</h4>
+                            <p class="text-sm text-gray-500">Building Information Modeling for advanced coordination.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-black/10 hover:border-black/30 transition shadow-sm">
+                            <h4 class="font-bold text-brand-black text-lg mb-2">As-Built Drawings</h4>
+                            <p class="text-sm text-gray-500">Accurate documentation of finished construction.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-black/10 hover:border-black/30 transition shadow-sm">
+                            <h4 class="font-bold text-brand-black text-lg mb-2">Shop Drawings</h4>
+                            <p class="text-sm text-gray-500">Fabrication details for onsite installation.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-black/10 hover:border-black/30 transition shadow-sm">
+                            <h4 class="font-bold text-brand-black text-lg mb-2">Consultation</h4>
+                            <p class="text-sm text-gray-500">Technical advice on local code compliance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-black/5 pt-20 pb-10 text-sm mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                 <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <span class="font-display font-bold text-2xl text-brand-black">FnF<span class="text-brand-yellow">.</span></span>
+                </a>
+                <p class="text-gray-500 max-w-sm mb-6">
+                    The Sound of Drawing. Delivering innovative, sustainable, and code-compliant engineering drafting solutions.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-brand-black font-bold mb-4 uppercase tracking-widest text-xs">Services</h4>
+                <ul class="space-y-3 text-gray-500">
+                    <li><a href="services.html" class="hover:text-brand-black transition">MEP Design</a></li>
+                    <li><a href="services.html" class="hover:text-brand-black transition">Architectural Drafting</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-brand-black font-bold mb-4 uppercase tracking-widest text-xs">Company</h4>
+                <ul class="space-y-3 text-gray-500">
+                    <li><a href="about.html" class="hover:text-brand-black transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-brand-black transition">Get a Quote</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 border-t border-black/5 pt-8">
+            &copy; 2026 FnF Engineering Services. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
