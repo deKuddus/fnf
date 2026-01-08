@@ -1,0 +1,12 @@
+{
+  "name": "fnf-engineering",
+  "version": "1.0.0",
+  "description": "FnF Engineering Services Website",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

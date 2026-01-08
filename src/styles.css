@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Modern Button Styles */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 text-base font-bold leading-6 text-brand-dark bg-brand-yellow rounded-full shadow-lg hover:bg-white hover:text-brand-dark transition-all duration-300 transform hover:-translate-y-1 hover:shadow-brand-yellow/50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 text-base font-bold leading-6 text-white border border-white/20 rounded-full hover:bg-white/10 hover:border-brand-yellow/50 transition-all duration-300 backdrop-blur-sm;
+  }
+
+  .section-padding {
+    @apply py-20 px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto;
+  }
+
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl;
+  }
+
+  /* Text Gradients */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-yellow to-yellow-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-grid {
+    background-size: 40px 40px;
+    mask-image: linear-gradient(to bottom, transparent, 10%, black, 90%, transparent);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-dark text-slate-300 overflow-x-hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    @apply bg-brand-dark;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-brand-yellow/50 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-brand-yellow;
+}
