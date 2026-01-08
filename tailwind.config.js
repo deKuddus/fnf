@@ -11,6 +11,7 @@ module.exports = {
         'brand-black': '#000000', // Pure black
         'brand-dark': '#0a0a0a', // Almost black (neutral)
         'brand-gray': '#f4f4f5', // Zinc 100
+        'brand-beige': '#FDFBF7',
         'surface-dark': '#171717', // Neutral dark gray (Zinc 900)
       },
       fontFamily: {

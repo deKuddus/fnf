@@ -7,49 +7,52 @@
     <link href="./public/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans antialiased selection:bg-brand-yellow selection:text-brand-black flex flex-col min-h-screen bg-brand-dark">
+<body class="font-sans antialiased selection:bg-brand-yellow selection:text-white flex flex-col min-h-screen bg-brand-beige text-brand-black">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 transition-all duration-300 bg-brand-dark/80 backdrop-blur-lg border-b border-white/5">
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-brand-beige/90 backdrop-blur-md border-b border-black/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                  <a href="index.html" class="flex items-center gap-3 group">
-                    <img class="h-10 w-auto rounded border border-white/10 group-hover:border-brand-yellow transition duration-300 grayscale" src="./logo.jpeg" alt="FnF Logo">
+                    <img class="h-10 w-auto rounded border border-black/5 group-hover:border-brand-yellow transition duration-300" src="./logo.jpeg" alt="FnF Logo">
                     <div class="flex flex-col">
-                        <span class="font-display font-bold text-xl text-white tracking-tight leading-none">FnF<span class="text-brand-yellow">.</span></span>
+                        <span class="font-display font-bold text-xl text-brand-black tracking-tight leading-none">FnF<span class="text-brand-yellow">.</span></span>
                         <span class="text-[10px] text-gray-400 font-medium tracking-widest uppercase">Engineering</span>
                     </div>
                 </a>
-                <div class="hidden md:flex space-x-1 items-center bg-white/5 px-2 py-1 rounded-full border border-white/10">
-                    <a href="index.html" class="text-gray-400 hover:text-white hover:bg-white/5 px-4 py-2 rounded-full text-sm font-medium transition">Home</a>
-                    <a href="about.html" class="text-gray-400 hover:text-white hover:bg-white/5 px-4 py-2 rounded-full text-sm font-medium transition">About</a>
-                    <a href="services.html" class="text-gray-400 hover:text-white hover:bg-white/5 px-4 py-2 rounded-full text-sm font-medium transition">Services</a>
+                <div class="hidden md:flex space-x-1 items-center bg-black/5 px-2 py-1 rounded-full border border-black/5">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-black hover:bg-black/5 px-4 py-2 rounded-full text-sm font-medium transition">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-brand-black hover:bg-black/5 px-4 py-2 rounded-full text-sm font-medium transition">About</a>
+                    <a href="services.html" class="text-gray-600 hover:text-brand-black hover:bg-black/5 px-4 py-2 rounded-full text-sm font-medium transition">Services</a>
                 </div>
                 <div class="hidden md:flex">
-                    <a href="contact.html" class="bg-brand-yellow text-brand-dark hover:bg-white px-5 py-2.5 rounded-full text-sm font-bold transition duration-300 shadow-lg shadow-brand-yellow/20">Book Consultation</a>
+                    <a href="contact.html" class="bg-brand-black text-white hover:bg-brand-yellow hover:text-black px-5 py-2.5 rounded-full text-sm font-bold transition duration-300 shadow-lg shadow-black/10">
+                        Book Consultation
+                    </a>
                 </div>
-                 <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+
+                <!-- Mobile Button -->
+                 <button id="mobile-menu-btn" class="md:hidden text-brand-black p-2">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
                 </button>
             </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-white/10 p-6 space-y-4">
-            <a href="index.html" class="block text-gray-400 text-lg">Home</a>
-            <a href="about.html" class="block text-gray-400 text-lg">About</a>
-            <a href="services.html" class="block text-gray-400 text-lg">Services</a>
-            <a href="contact.html" class="block text-brand-yellow text-lg font-bold">Get a Quote</a>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-beige border-b border-black/10 p-6 space-y-4">
+            <a href="index.html" class="block text-gray-600 text-lg">Home</a>
+            <a href="about.html" class="block text-gray-600 text-lg">About</a>
+            <a href="services.html" class="block text-gray-600 text-lg">Services</a>
+            <a href="contact.html" class="block text-brand-black text-lg font-bold">Get a Quote</a>
         </div>
     </nav>
 
     <!-- Page Header -->
     <header class="relative pt-40 pb-20 overflow-hidden">
-         <div class="absolute inset-0 bg-brand-dark z-0">
-            <div class="absolute inset-0 bg-grid-pattern opacity-[0.1]"></div>
-            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-yellow/5 rounded-full blur-[120px]"></div>
+        <div class="absolute inset-0 bg-brand-beige z-0">
+             <div class="absolute inset-0 bg-grid-pattern opacity-[0.03] bg-[length:40px_40px]"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-white">Contact Us<span class="text-brand-yellow">.</span></h1>
-            <p class="text-xl text-gray-400 max-w-2xl mx-auto">Start your project with the best in the business.</p>
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-brand-black">Get In Touch</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Ready to start your project? We are ready to listen.</p>
         </div>
     </header>
 
@@ -59,90 +62,74 @@
             <div class="grid lg:grid-cols-2 gap-16">
                 <!-- Contact Info -->
                 <div>
-                     <span class="text-brand-yellow font-bold tracking-widest text-xs uppercase mb-2 block">Let's Talk</span>
-                    <h2 class="font-display text-4xl font-bold mb-6 text-white">Get In Touch</h2>
-                    <p class="text-gray-400 mb-10 text-lg leading-relaxed">
-                        Have a project in mind? We'd love to hear from you. Reach out to discuss how we can support your architectural and engineering needs.
+                     <h2 class="font-display text-4xl font-bold mb-6 text-brand-black">Let's Build Something Great Together.</h2>
+                    <p class="text-gray-600 text-lg mb-12">
+                        Whether you need a consultation on code compliance or a full MEP design package, our team is here to help.
                     </p>
 
                     <div class="space-y-8">
-                        <div class="flex items-start bg-surface-dark p-6 rounded-2xl border border-white/5 hover:border-brand-yellow/30 transition">
-                            <div class="flex-shrink-0">
-                                <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-brand-yellow text-brand-black shadow-lg shadow-brand-yellow/20">
-                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                    </svg>
-                                </span>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-white border border-black/10 flex items-center justify-center flex-shrink-0 text-brand-black shadow-sm">
+                                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-xl font-bold text-white">Phone</h3>
-                                <p class="mt-2 text-gray-400">+966 564155615</p>
-                                <p class="text-sm text-gray-500">Mon-Fri 9am to 6pm</p>
+                                <h3 class="text-brand-black font-bold text-lg">Email Us</h3>
+                                <p class="text-gray-600">contact@fnfengineering.com</p>
                             </div>
                         </div>
-
-                        <div class="flex items-start bg-surface-dark p-6 rounded-2xl border border-white/5 hover:border-brand-yellow/30 transition">
-                            <div class="flex-shrink-0">
-                                <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-brand-yellow text-brand-black shadow-lg shadow-brand-yellow/20">
-                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                    </svg>
-                                </span>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-white border border-black/10 flex items-center justify-center flex-shrink-0 text-brand-black shadow-sm">
+                                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-xl font-bold text-white">Email</h3>
-                                <p class="mt-2 text-gray-400">FnF26@.com</p>
-                                <p class="text-sm text-gray-500">We reply within 24 hours.</p>
+                                <h3 class="text-brand-black font-bold text-lg">Call Us</h3>
+                                <p class="text-gray-600">+966 55 123 4567</p>
                             </div>
                         </div>
-
-                        <div class="flex items-start bg-surface-dark p-6 rounded-2xl border border-white/5 hover:border-brand-yellow/30 transition">
-                            <div class="flex-shrink-0">
-                                <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-brand-yellow text-brand-black shadow-lg shadow-brand-yellow/20">
-                                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                </span>
-                            </div>
+                        <div class="flex items-start">
+                             <div class="w-12 h-12 rounded-full bg-white border border-black/10 flex items-center justify-center flex-shrink-0 text-brand-black shadow-sm">
+                                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                             </div>
                             <div class="ml-4">
-                                <h3 class="text-xl font-bold text-white">Office</h3>
-                                <p class="mt-2 text-gray-400">Riyadh, Saudi Arabia</p>
+                                <h3 class="text-brand-black font-bold text-lg">Visit Us</h3>
+                                <p class="text-gray-600">Olaya Street, Riyadh<br>Kingdom of Saudi Arabia</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
-                <div class="bg-surface-dark rounded-3xl p-8 md:p-10 border border-white/5 shadow-2xl">
-                    <h3 class="font-display text-2xl font-bold mb-8 text-white">Request a Quote</h3>
-                    <form action="#" method="POST" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Full Name</label>
-                            <input type="text" name="name" id="name" class="block w-full rounded-lg bg-brand-dark border-white/10 text-white placeholder-gray-600 focus:border-brand-yellow focus:ring-brand-yellow sm:text-sm p-4 transition" placeholder="John Doe">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
-                            <input type="email" name="email" id="email" class="block w-full rounded-lg bg-brand-dark border-white/10 text-white placeholder-gray-600 focus:border-brand-yellow focus:ring-brand-yellow sm:text-sm p-4 transition" placeholder="you@company.com">
+                <div class="bg-gray-50 border border-black/10 p-8 rounded-2xl shadow-sm">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-2">First Name</label>
+                                <input type="text" class="w-full bg-white border border-black/10 rounded-lg px-4 py-3 text-brand-black focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-2">Last Name</label>
+                                <input type="text" class="w-full bg-white border border-black/10 rounded-lg px-4 py-3 text-brand-black focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition" placeholder="Doe">
+                            </div>
                         </div>
                          <div>
-                            <label for="service" class="block text-sm font-medium text-gray-400 mb-2">Service Interested In</label>
-                            <select id="service" name="service" class="block w-full rounded-lg bg-brand-dark border-white/10 text-white placeholder-gray-600 focus:border-brand-yellow focus:ring-brand-yellow sm:text-sm p-4 transition">
-                                <option>Architectural Design</option>
-                                <option>MEP Design</option>
-                                <option>Drafting Services</option>
-                                <option>Other</option>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                            <input type="email" class="w-full bg-white border border-black/10 rounded-lg px-4 py-3 text-brand-black focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Project Type</label>
+                            <select class="w-full bg-white border border-black/10 rounded-lg px-4 py-3 text-brand-black focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition appearance-none">
+                                <option>Residential</option>
+                                <option>Commercial</option>
+                                <option>Industrial</option>
                             </select>
                         </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
-                            <textarea id="message" name="message" rows="4" class="block w-full rounded-lg bg-brand-dark border-white/10 text-white placeholder-gray-600 focus:border-brand-yellow focus:ring-brand-yellow sm:text-sm p-4 transition" placeholder="Tell us about your project..."></textarea>
+                         <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                            <textarea rows="4" class="w-full bg-white border border-black/10 rounded-lg px-4 py-3 text-brand-black focus:border-brand-yellow focus:ring-1 focus:ring-brand-yellow outline-none transition" placeholder="Tell us about your project..."></textarea>
                         </div>
-                        <div>
-                            <button type="submit" class="w-full flex justify-center py-4 px-4 border border-transparent rounded-full shadow-lg text-lg font-bold text-brand-dark bg-brand-yellow hover:bg-white hover:scale-[1.02] transform transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-yellow">
-                                Send Message
-                            </button>
-                        </div>
+                        <button type="submit" class="w-full bg-brand-black text-white py-4 rounded-lg font-bold hover:bg-brand-yellow hover:text-black transition duration-300">
+                            Send Message
+                        </button>
                     </form>
                 </div>
             </div>
@@ -150,34 +137,39 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-brand-dark border-t border-white/10 pt-20 pb-10 text-sm mt-auto">
+    <footer class="bg-white border-t border-black/5 pt-20 pb-10 text-sm mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div class="col-span-1 md:col-span-2">
                  <a href="index.html" class="flex items-center gap-2 mb-6">
-                    <span class="font-display font-bold text-2xl text-white">FnF<span class="text-brand-yellow">.</span></span>
+                    <span class="font-display font-bold text-2xl text-brand-black">FnF<span class="text-brand-yellow">.</span></span>
                 </a>
                 <p class="text-gray-500 max-w-sm mb-6">
                     The Sound of Drawing. Delivering innovative, sustainable, and code-compliant engineering drafting solutions.
                 </p>
+                <div class="flex gap-4">
+                    <!-- Social icons placeholder -->
+                    <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-brand-black hover:text-brand-yellow transition cursor-pointer">X</div>
+                    <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-brand-black hover:text-brand-yellow transition cursor-pointer">In</div>
+                </div>
             </div>
 
             <div>
-                <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Services</h4>
+                <h4 class="text-brand-black font-bold mb-4 uppercase tracking-widest text-xs">Services</h4>
                 <ul class="space-y-3 text-gray-500">
-                    <li><a href="services.html" class="hover:text-brand-yellow transition">MEP Design</a></li>
-                    <li><a href="services.html" class="hover:text-brand-yellow transition">Architectural Drafting</a></li>
+                    <li><a href="services.html" class="hover:text-brand-black transition">MEP Design</a></li>
+                    <li><a href="services.html" class="hover:text-brand-black transition">Architectural Drafting</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Company</h4>
+                <h4 class="text-brand-black font-bold mb-4 uppercase tracking-widest text-xs">Company</h4>
                 <ul class="space-y-3 text-gray-500">
-                    <li><a href="about.html" class="hover:text-brand-yellow transition">About Us</a></li>
-                    <li><a href="contact.html" class="hover:text-brand-yellow transition">Get a Quote</a></li>
+                    <li><a href="about.html" class="hover:text-brand-black transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-brand-black transition">Get a Quote</a></li>
                 </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600 border-t border-white/5 pt-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 border-t border-black/5 pt-8">
             &copy; 2026 FnF Engineering Services. All rights reserved.
         </div>
     </footer>
